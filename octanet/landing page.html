@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquatics Museum</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #e0f7fa;
+        }
+
+        /* Header Section */
+        header {
+            background: url('https://png.pngtree.com/thumb_back/fw800/background/20240606/pngtree-natures-underwater-tapestry-an-aquatic-plant-image_15858903.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+        }
+
+        .header-btn {
+            padding: 15px 30px;
+            background-color: #0077b6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .header-btn:hover {
+            background-color: #00b4d8;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: rgba(0, 71, 171, 0.9);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #90e0ef;
+        }
+
+        /* Attractive Boxes Section */
+        .attractive-boxes {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+            gap: 20px;
+            background-color: #f0f8ff;
+        }
+
+        .box {
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            padding: 20px;
+            text-align: center;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .box img {
+            width: 100px;
+            margin-bottom: 15px;
+        }
+
+        .box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+         .about {
+            background: url('https://static.vecteezy.com/system/resources/thumbnails/027/803/659/small/goldfish-swimming-among-aquatic-plants-in-an-aquarium-free-photo.jpg') no-repeat center center/cover;
+            color: white;
+        }
+      .contact {
+            background: url('https://c4.wallpaperflare.com/wallpaper/250/263/602/aquarium-computer-backgrounds-wallpaper-preview.jpg') no-repeat center center/cover;
+            color: white;
+        }
+
+        .exhibits {
+            background-color: #caf0f8;
+            color: #03045e;
+             
+        }
+
+        /* Footer */
+        footer {
+            background-color: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#exhibits">Exhibits</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Welcome to the Aquatics Museum</h1>
+        <p>Explore the wonders of the ocean and its incredible inhabitants.</p>
+        <button class="header-btn">Discover More</button>
+    </header>
+
+    <section class="attractive-boxes">
+        <div class="box">
+            <h3>Coral Ecosystems</h3>
+            <p>Discover vibrant coral reefs teeming with marine life, offering a glimpse into underwater biodiversity.</p>
+        </div>
+        <div class="box">
+            <img src="https://img.icons8.com/color/96/dolphin.png" alt="Dolphin Icon">
+            <h3>Marine Mammals</h3>
+            <p>Learn about dolphins, whales, and seals through interactive displays and real-life stories.</p>
+        </div>
+        <div class="box">
+            <img src="https://img.icons8.com/color/96/submarine.png" alt="Submarine Icon">
+            <h3>Deep-Sea Adventures</h3>
+            <p>Embark on a deep-sea virtual dive and experience the mysteries of the ocean's depths.</p>
+        </div>
+    </section>
+
+    <div id="about" class="section about">
+        <h2>About Us</h2>
+        <p>The Aquatics Museum is a gateway to the fascinating world beneath the waves. Dive into our exhibits and experience the vibrant ecosystems of coral reefs, mysterious deep-sea creatures, and interactive displays for all ages.</p>
+    </div>
+
+    <div id="exhibits" class="section exhibits">
+        <h2>Exhibits</h2>
+        <ul>
+            <li>🪸 Coral Reefs and Tropical Fish</li>
+            <li>🦈 Shark Encounter</li>
+            <li>🐠 Deep-Sea Exploration</li>
+            <li>🔬 Interactive Aquatic Labs</li>
+        </ul>
+        <a href="#contact" class="button">Plan Your Visit</a>
+    </div>
+
+    <div id="contact" class="section contact">
+        <h2>Contact Us</h2>
+        <p>📍 Address: 123 Marine Blvd, Ocean City</p>
+        <p>📧 Email: info@aquaticsmuseum.com</p>
+        <p>📞 Phone: +123-456-7890</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Aquatics Museum.All rights reserved.</p>
+    </footer>
+</body>
+</html>
